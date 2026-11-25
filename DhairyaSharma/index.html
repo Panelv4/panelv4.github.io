@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dhairya Sharma — Portfolio · Findings · CVEs (Panelv4 / vibecoder)</title>
+<meta name="description" content="Dhairya Sharma, also known as Panelv4 on GitHub and vibecoder on HackerOne, is an application security researcher from Gwalior, India and the reporter credited on CVE-2026-120213, CVE-2026-117518 and CVE-2026-116592. Findings, projects and responsible disclosure." />
+<meta name="keywords" content="Dhairya Sharma, Panelv4, vibecoder, Dhairya Sharma Panelv4 vibecoder, CVE-2026-120213, CVE-2026-117518, CVE-2026-116592, application security, Gwalior, security researcher" />
+<meta name="author" content="Dhairya Sharma" />
+<link rel="canonical" href="https://panelv4.github.io/DhairyaSharma/" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Dhairya Sharma (Panelv4 / vibecoder) — Application Security Researcher" />
+<meta property="og:description" content="Reporter on three public CVEs: CVE-2026-120213, CVE-2026-117518, CVE-2026-116592." />
+<meta property="og:url" content="https://panelv4.github.io/DhairyaSharma/" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://panelv4.github.io/#person",
+      "name": "Dhairya Sharma",
+      "alternateName": ["Panelv4", "vibecoder", "Dhairya Sharma (Panelv4)"],
+      "url": "https://panelv4.github.io/",
+      "email": "mailto:dhairyasharma7101@gmail.com",
+      "jobTitle": "Application Security Researcher / AI-assisted Product Builder",
+      "description": "Independent application security researcher credited as reporter on three public CVEs published by the OpenJS Foundation CNA in November 2026.",
+      "address": { "@type": "PostalAddress", "addressLocality": "Gwalior", "addressRegion": "Madhya Pradesh", "addressCountry": "IN" },
+      "sameAs": [
+        "https://github.com/Panelv4",
+        "https://github.com/Panelv4/Panelv4",
+        "https://github.com/Panelv4/Panelv4/blob/main/ALIASES.md",
+        "https://github.com/Panelv4/CVE-Research-Dhairya-Sharma/blob/main/FINDINGS.md",
+        "https://hackerone.com/vibecoder"
+      ],
+      "knowsAbout": ["application security", "HTTP request parsing", "URL normalization", "reverse proxies", "shared-cache correctness", "authorization", "responsible disclosure", "Python", "React", "Flask", "rules-as-code"]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://panelv4.github.io/#cve-2026-120213",
+      "name": "CVE-2026-120213 — @fastify/http-proxy prefix escape via decoded route parameters",
+      "identifier": "CVE-2026-120213",
+      "creator": { "@id": "https://panelv4.github.io/#person" },
+      "datePublished": "2026-11-02",
+      "url": "https://github.com/fastify/fastify-http-proxy/security/advisories/GHSA-h3vp-4jfr-v364"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://panelv4.github.io/#cve-2026-117518",
+      "name": "CVE-2026-117518 — @fastify/reply-from backslash dot-segment prefix escape",
+      "identifier": "CVE-2026-117518",
+      "creator": { "@id": "https://panelv4.github.io/#person" },
+      "datePublished": "2026-11-02",
+      "url": "https://github.com/fastify/fastify-reply-from/security/advisories/GHSA-vp2r-3vgv-32g9"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://panelv4.github.io/#cve-2026-116592",
+      "name": "CVE-2026-116592 — undici cache poisoning and cross-user disclosure via intermediate redirect hops",
+      "identifier": "CVE-2026-116592",
+      "creator": { "@id": "https://panelv4.github.io/#person" },
+      "datePublished": "2026-11-05",
+      "url": "https://github.com/nodejs/undici/security/advisories/GHSA-mqg3-3v4r-cm32"
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#070b10; --panel:#0d151d; --panel2:#111d26; --line:#1e3039;
+    --ink:#eef6f3; --muted:#8ea5ad; --dim:#63808a;
+    --mint:#7cffcb; --blue:#6cb6ff; --amber:#ffc978; --red:#ff7a90;
+    --mono:"SFMono-Regular",Consolas,"DejaVu Sans Mono","Courier New",monospace;
+    --sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;
+    background-image:linear-gradient(rgba(124,255,203,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(124,255,203,.035) 1px,transparent 1px);
+    background-size:32px 32px;-webkit-font-smoothing:antialiased}
+  body:before{content:"";position:fixed;inset:0;pointer-events:none;
+    background:radial-gradient(760px 420px at 82% -8%,rgba(124,255,203,.13),transparent 70%),radial-gradient(620px 400px at 4% 100%,rgba(108,182,255,.09),transparent 70%)}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px;position:relative}
+  header{border-bottom:1px solid var(--line);background:rgba(7,11,16,.82);backdrop-filter:blur(10px);position:sticky;top:0;z-index:5}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-family:var(--mono);font-size:13px;letter-spacing:2px;color:var(--mint);text-decoration:none}
+  .brand span{color:var(--dim)}
+  .navlinks{display:flex;gap:18px;flex-wrap:wrap}
+  .navlinks a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.5px}
+  .navlinks a:hover{color:var(--mint)}
+  .hero{padding:78px 0 56px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:3.5px;color:var(--mint);text-transform:uppercase}
+  h1{font-size:clamp(38px,7vw,76px);line-height:1.02;margin:18px 0 10px;letter-spacing:-2px;font-weight:800}
+  h1 .accent{color:var(--mint)}
+  .handle{font-family:var(--mono);font-size:clamp(15px,2.2vw,20px);color:var(--blue);letter-spacing:1px}
+  .tagline{max-width:660px;color:var(--muted);font-size:17px;margin:22px 0 0}
+  .identity{max-width:760px;margin:26px 0 0;padding:16px 20px;border:1px solid var(--line);border-left:3px solid var(--mint);
+    background:var(--panel);border-radius:0 8px 8px 0;font-size:15px;color:var(--ink)}
+  .identity strong{color:var(--mint)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:34px 0}
+  .stat{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:18px}
+  .stat b{display:block;font-family:var(--mono);font-size:28px;color:var(--mint);line-height:1.1}
+  .stat small{color:var(--dim);font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+  .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+  .btn{font-family:var(--mono);font-size:12px;letter-spacing:.6px;text-decoration:none;padding:11px 17px;border-radius:7px;border:1px solid var(--line);color:var(--ink);background:var(--panel2)}
+  .btn:hover{border-color:var(--mint);color:var(--mint)}
+  .btn.primary{background:var(--mint);color:#04120d;border-color:var(--mint);font-weight:700}
+  .btn.primary:hover{background:#a5ffdc;color:#04120d}
+  section{padding:52px 0;border-top:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:10px;flex-wrap:wrap}
+  .sec-head .num{font-family:var(--mono);font-size:12px;color:var(--mint)}
+  h2{font-size:clamp(24px,3.5vw,34px);margin:0;letter-spacing:-.8px}
+  .sec-sub{color:var(--muted);max-width:720px;margin:8px 0 28px;font-size:15px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+  .card{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:22px;transition:.18s ease}
+  .card:hover{border-color:#355a5a;transform:translateY(-3px)}
+  .card .cve{font-family:var(--mono);font-size:12px;color:var(--blue);letter-spacing:.5px}
+  .card h3{font-size:17px;margin:10px 0 12px;line-height:1.35}
+  .card p{color:var(--muted);font-size:14px;margin:0 0 14px}
+  .chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+  .chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;padding:4px 9px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+  .chip.crit{color:var(--red);border-color:rgba(255,122,144,.4);background:rgba(255,122,144,.07)}
+  .chip.high{color:var(--amber);border-color:rgba(255,201,120,.4);background:rgba(255,201,120,.07)}
+  .chip.ok{color:var(--mint);border-color:rgba(124,255,203,.35);background:rgba(124,255,203,.06)}
+  .kv{font-family:var(--mono);font-size:12px;color:var(--dim);border-top:1px dashed var(--line);padding-top:12px;margin-top:6px}
+  .kv b{color:var(--ink);font-weight:600}
+  .card a.link{font-family:var(--mono);font-size:12px;color:var(--mint);text-decoration:none;display:inline-block;margin-top:14px}
+  .card a.link:hover{text-decoration:underline}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:1.3px;text-transform:uppercase;color:var(--dim);padding:10px 12px;border-bottom:1px solid var(--line)}
+  td{padding:12px;border-bottom:1px solid rgba(30,48,57,.6);color:var(--muted);vertical-align:top}
+  td a{color:var(--ink);text-decoration:none;font-family:var(--mono);font-size:12.5px}
+  td a:hover{color:var(--mint)}
+  .badge{font-family:var(--mono);font-size:10.5px;padding:3px 8px;border-radius:5px;background:var(--panel2);color:var(--muted);border:1px solid var(--line)}
+  .note{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:22px;color:var(--muted);font-size:14px}
+  .note b{color:var(--ink)}
+  .note strong{color:var(--mint)}
+  .terminal{font-family:var(--mono);font-size:12.5px;color:var(--muted);background:#060c11;border:1px solid var(--line);
+    border-radius:10px;padding:20px;overflow-x:auto;white-space:pre-wrap;line-height:1.9}
+  .terminal .g{color:var(--mint)} .terminal .b{color:var(--blue)} .terminal .d{color:var(--dim)}
+  footer{border-top:1px solid var(--line);padding:38px 0 60px;color:var(--dim);font-size:13px}
+  footer a{color:var(--mint);text-decoration:none}
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  @media(max-width:620px){.hero{padding-top:48px}.navlinks{display:none}.wrap{padding:0 18px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">DHAIRYA SHARMA <span>// @Panelv4</span></a>
+    <nav class="navlinks">
+      <a href="#attribution">attribution</a>
+      <a href="#cves">cves</a>
+      <a href="#projects">projects</a>
+      <a href="#integrity">integrity</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">// identity · researcher_01 · gwalior, in</div>
+    <h1>Dhairya<br /><span class="accent">Sharma.</span></h1>
+    <div class="handle">github.com/Panelv4 &nbsp;·&nbsp; hackerone.com/vibecoder &nbsp;·&nbsp; application security researcher &amp; AI-assisted product builder</div>
+    <p class="tagline">I turn ideas into working software and curiosity into security research. My focus is HTTP parsing, URL normalisation, proxy and cache boundaries, and authorisation — paired with deterministic systems and evidence-based technical writing.</p>
+
+    <div class="identity" id="attribution">
+      <strong>🔎 Name ↔ handle ↔ CVE attribution.</strong> The three public CVE records below list the reporter as <code>Panelv4</code>. <strong>Panelv4 is me — Dhairya Sharma</strong>, and my HackerOne handle <code>vibecoder</code> is also me. <strong>Panelv4 = vibecoder = Dhairya Sharma.</strong> CVE-2026-120213, CVE-2026-117518 and CVE-2026-116592 were reported by Dhairya Sharma. This page exists so searching any of those CVE IDs or either handle surfaces the real name.
+      <div style="margin-top:12px;font-family:var(--mono);font-size:12px;color:var(--dim)">
+        <a style="color:var(--mint);text-decoration:none" href="https://github.com/Panelv4/Panelv4/blob/main/ALIASES.md">Dhairya Sharma = Panelv4 = vibecoder →</a>
+        &nbsp;·&nbsp;
+        <a style="color:var(--mint);text-decoration:none" href="https://github.com/Panelv4/CVE-Research-Dhairya-Sharma/blob/main/FINDINGS.md">Dhairya Sharma — findings index →</a>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>03</b><small>public CVEs</small></div>
+      <div class="stat"><b>9.1</b><small>highest CVSS</small></div>
+      <div class="stat"><b>12</b><small>public repos</small></div>
+      <div class="stat"><b>2026</b><small>disclosures</small></div>
+    </div>
+
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/Panelv4/CVE-Research-Dhairya-Sharma">CVE research →</a>
+      <a class="btn" href="https://github.com/Panelv4/Panelv4">Profile README</a>
+      <a class="btn" href="https://github.com/Panelv4?tab=repositories">All repositories</a>
+      <a class="btn" href="https://hackerone.com/vibecoder">HackerOne (vibecoder)</a>
+      <a class="btn" href="https://github.com/Panelv4/CVE-Research-Dhairya-Sharma/blob/main/FINDINGS.md">Dhairya Sharma — findings →</a>
+      <a class="btn" href="https://panelv4.github.io/DhairyaSharma/">DhairyaSharma site →</a>
+    </div>
+  </div>
+
+  <section id="cves">
+    <div class="sec-head"><span class="num">01 /</span><h2>Public vulnerability disclosures</h2></div>
+    <p class="sec-sub">Three advisories published through the OpenJS Foundation CNA in November 2026. Severity, CVSS vectors, affected versions and fixed versions follow the maintainers' public GitHub Security Advisories. Reported by <strong>Dhairya Sharma (Panelv4)</strong>.</p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="cve">CVE-2026-120213 · GHSA-h3vp-4jfr-v364</div>
+        <h3>Prefix escape via decoded route parameters in @fastify/http-proxy</h3>
+        <div class="chips"><span class="chip crit">CRITICAL</span><span class="chip">CVSS 9.1</span><span class="chip">CWE-22 · CWE-436</span></div>
+        <p>URL-decoded route parameters are substituted into <code>rewritePrefix</code> without re-encoding. An encoded <code>/</code> plus <code>#</code> or <code>?</code> injects extra upstream segments and strips the mandatory suffix — no <code>..</code> needed. Leads to SSRF or authorisation bypass.</p>
+        <div class="kv"><b>Affected</b> &gt;= 9.0.0, &lt; 11.6.6 &nbsp;·&nbsp; <b>Fixed</b> 11.6.6 &nbsp;·&nbsp; <b>Workaround</b> none</div>
+        <a class="link" href="https://github.com/fastify/fastify-http-proxy/security/advisories/GHSA-h3vp-4jfr-v364">Advisory ↗</a>
+        <a class="link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-120213">NVD ↗</a>
+        <a class="link" href="https://github.com/Panelv4/CVE-Research-Dhairya-Sharma/blob/main/cves/CVE-2026-120213.md">Dhairya Sharma — write-up ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="cve">CVE-2026-117518 · GHSA-vp2r-3vgv-32g9</div>
+        <h3>Backslash dot-segment prefix escape in @fastify/reply-from</h3>
+        <div class="chips"><span class="chip high">HIGH</span><span class="chip">CVSS 8.2</span><span class="chip">CWE-22</span></div>
+        <p><code>buildURL()</code> checked only forward-slash dot-segments, while the WHATWG URL parser normalises <code>\</code> and <code>%5c</code> to <code>/</code>. Backslash dot-segments bypass the check and resolve to another upstream path, escaping the intended proxy prefix.</p>
+        <div class="kv"><b>Affected</b> &lt;= 12.8.0 &nbsp;·&nbsp; <b>Fixed</b> 12.8.1 &nbsp;·&nbsp; <b>Workaround</b> none</div>
+        <a class="link" href="https://github.com/fastify/fastify-reply-from/security/advisories/GHSA-vp2r-3vgv-32g9">Advisory ↗</a>
+        <a class="link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-117518">NVD ↗</a>
+        <a class="link" href="https://github.com/Panelv4/CVE-Research-Dhairya-Sharma/blob/main/cves/CVE-2026-117518.md">Dhairya Sharma — write-up ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="cve">CVE-2026-116592 · GHSA-mqg3-3v4r-cm32</div>
+        <h3>Cache poisoning &amp; cross-user disclosure via intermediate redirects in undici</h3>
+        <div class="chips"><span class="chip high">HIGH</span><span class="chip">CVSS 7.4</span><span class="chip">CWE-346 · CWE-524</span></div>
+        <p>With an originless <code>Agent</code>, a shared cache and <code>compose(redirect(), cache())</code>, only the final redirect hop is inspected. Intermediate <code>Vary</code>, <code>no-cache</code> and origin policy are lost, so user-specific responses can be cached under a trusted key and served to another user.</p>
+        <div class="kv"><b>Affected</b> 7.30.1, 8.12.2–8.12.3 &nbsp;·&nbsp; <b>Fixed</b> 7.30.2 / 8.12.4</div>
+        <a class="link" href="https://github.com/nodejs/undici/security/advisories/GHSA-mqg3-3v4r-cm32">Advisory ↗</a>
+        <a class="link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-116592">NVD ↗</a>
+        <a class="link" href="https://github.com/Panelv4/CVE-Research-Dhairya-Sharma/blob/main/cves/CVE-2026-116592.md">Dhairya Sharma — write-up ↗</a>
+      </article>
+    </div>
+
+    <p class="sec-sub" style="margin-top:22px">Full technical write-ups, credit records and the credit-correction request live in <a style="color:var(--mint)" href="https://github.com/Panelv4/CVE-Research-Dhairya-Sharma">CVE-Research-Dhairya-Sharma</a>. Findings index with real-name GitHub links: <a style="color:var(--mint)" href="https://github.com/Panelv4/CVE-Research-Dhairya-Sharma/blob/main/FINDINGS.md">Dhairya Sharma — FINDINGS.md</a>.</p>
+  </section>
+
+  <section id="projects">
+    <div class="sec-head"><span class="num">02 /</span><h2>Repositories — 12 public projects</h2></div>
+    <p class="sec-sub">Deterministic systems, AI-assisted prototypes and business applications. Descriptions reflect what is actually in each repository, including prototypes and early experiments.</p>
+
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Repo</th><th>Stack</th><th>What it is</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://github.com/Panelv4/Nayaya">Nayaya</a></td><td>Python</td><td>Deterministic Rules-as-Code legal engine: exhaustive fact-space analysis, amendment impact, minimal witnesses, citizen case-reporting portal prototype. 10,752 cases in the BNS homicide pack.</td><td><span class="badge">flagship</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/aegisreview-ai-v2">aegisreview-ai-v2</a></td><td>Python</td><td>Offline deterministic SAST: 53 rules, 22 languages, taint traces, 0–100 score, SARIF 2.1.0 and a CI gate. No LLM, no network calls.</td><td><span class="badge">collaborative</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/OPS-prod">OPS-prod</a></td><td>TypeScript</td><td>OpsPilot release candidate: customer → project → time log → invoice → payment → receivables; production-readiness notes and Docker rehearsal.</td><td><span class="badge">RC</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/OPS-system">OPS-system</a></td><td>Next.js</td><td>OpsPilot foundation: Drizzle/PostgreSQL, scrypt auth, server-side sessions, 7 role policies, tenant-scoped queries. Explicitly not a finished SaaS.</td><td><span class="badge">foundation</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/ops">ops</a></td><td>Flask</td><td>Original OpsPilot ERP / CRM / HRMS concept unifying finance, HR, inventory, tasks, AI assistant and analytics.</td><td><span class="badge">prototype</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/Light">Light</a></td><td>React</td><td>AI companion with split chat + HTML preview sandbox, streaming xAI responses, TanStack Router. Adapts MIT-licensed third-party components.</td><td><span class="badge">prototype</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/Social-Application-">Social-Application-</a></td><td>Flask</td><td>Saransh Physiotherapy practice site: 8 service pages, validated appointment booking with reference codes, blog, contact and admin dashboard.</td><td><span class="badge">prototype</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/app.run">app.run</a></td><td>Flask</td><td>Minimal experiment that auto-extracts a zipped brand asset pack and renders an inline HTML template.</td><td><span class="badge">early</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/Dhairya-subdoamin">Dhairya-subdoamin</a></td><td>HTML</td><td>Two-file static HTML scratchpad / placeholder from early experiments.</td><td><span class="badge">early</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/Pishing">Pishing</a></td><td>Python</td><td>Archived early lab demo of fake-login credential-capture mechanics. Security-awareness study only; not for deployment.</td><td><span class="badge">archive</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/ScriptDefaceV10">ScriptDefaceV10</a></td><td>HTML</td><td>Forked third-party defacement demo page, retained as legacy reference. Not original work.</td><td><span class="badge">fork</span></td></tr>
+          <tr><td><a href="https://github.com/Panelv4/Deface-Webdav">Deface-Webdav</a></td><td>Python 2</td><td>Forked third-party WebDAV/Termux lab script, retained as legacy reference. Not original work.</td><td><span class="badge">fork</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="integrity">
+    <div class="sec-head"><span class="num">03 /</span><h2>Disclosure &amp; portfolio integrity</h2></div>
+    <div class="grid2">
+      <div class="note">
+        <b>What I claim.</b> Only three public advisories are claimed as CVEs, and only where an official advisory or CVE record credits <code>Panelv4</code> as reporter. Private coordinated-disclosure reports are not described with reproduction steps, endpoints or evidence. Self-deployed lab observations are labelled as independent research, <strong>not</strong> vendor-confirmed vulnerabilities.
+      </div>
+      <div class="note">
+        <b>What I don't claim.</b> No severity inflation, no production deployment, no customer adoption, no legal correctness, no security certification, no professional employment. AI coding tools materially assisted implementation across several projects; my contribution is product direction, requirements, test design, review and validation. Adapted third-party components are identified rather than claimed as original.
+      </div>
+    </div>
+    <div class="terminal" style="margin-top:16px"><span class="d">$</span> <span class="g">whoami</span>
+Dhairya Sharma · @Panelv4 · Gwalior, Madhya Pradesh, India
+
+<span class="d">$</span> <span class="g">cat</span> method.txt
+1. Confirm authorisation and programme scope
+2. Define the trust boundary, prerequisites, expected control, plausible impact
+3. Minimal, non-destructive reproduction in a controlled environment
+4. Keep sanitised evidence, versions, timestamps; separate observation from inference
+5. Report through approved channels; respect confidentiality and timelines
+6. Track validation, remediation and public attribution separately
+
+<span class="d">$</span> <span class="g">echo</span> $STATUS
+<span class="b">build · break · document · disclose responsibly</span>  <span class="d">✓</span></div>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head"><span class="num">04 /</span><h2>Contact</h2></div>
+    <p class="sec-sub">Interested in AI-assisted product building, technical generalist work and application-security research inside an existing product or engineering team.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:dhairyasharma7101@gmail.com">dhairyasharma7101@gmail.com</a>
+      <a class="btn" href="https://github.com/Panelv4">GitHub</a>
+      <a class="btn" href="https://hackerone.com/vibecoder">HackerOne (vibecoder)</a>
+    </div>
+    <p style="color:var(--dim);font-size:13px;margin-top:22px">Public-facing page — phone number and school details intentionally omitted.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 <b style="color:var(--ink)">Dhairya Sharma</b> · <a href="https://github.com/Panelv4">github.com/Panelv4</a> · 3 public CVEs · 12 public repositories</div>
+    <div style="margin-top:8px;font-family:var(--mono);font-size:11px;letter-spacing:1.5px;color:var(--dim)">PANELV4 == VIBECODER == DHAIRYA SHARMA ✓ &nbsp;//&nbsp; BUILD · BREAK · DOCUMENT · DISCLOSE RESPONSIBLY</div>
+  </div>
+</footer>
+
+</body>
+</html>
